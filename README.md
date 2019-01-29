@@ -13,7 +13,7 @@ Obviously they cannot share a public database where every party has access to mo
 * It is immutable and most importantly reliable. 
 
 ## Use Cases 
-####*So, who should join secure chain and how does it work?* 
+#### *So, who should join secure chain and how does it work?* 
 
 * When a crime is committed, the security party that identified it would put one node onto the security chain, then, it updates the record in every other server. Just like adding a node and sync it in blockchain. 
 
