@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+
+  # starts webpack watch server with hot reload for ui (vue) codem dockerfile Dockerfile.development
+  ui:
+    build:
+      context: ./services/appui
+    restart: always
+    volumes:
+      - ./services/appui/src:/app/appui/src/
+      - ./logs:/logs
+
+   # smart contracts source, tests and deployment code dockerfile Dockerfile.development
+  smart-contracts:
+    build:
+      context: ./services/updates
+    depends_on:
+      - ganache
+    volumes:
+      # mount the output contract build files into a host folder
+      - ./services/updates/src/build:/app/updates/build/
+      # mount the output test coverage report folder into a host folder
+      - ./services/updates/coverage-report:/app/updates/coverage/
+      - ./logs:/logs
+
+  # ganache-cli ethereum node
+  ganache:
+    image: trufflesuite/ganache-cli
+    command: "--seed abcd --defaultBalanceEther 100000000"
+
+  

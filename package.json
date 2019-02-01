@@ -10,10 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/priyankasrs/secureChain.git"
   },
-  "author": "",
+  "author": "priyankasrs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/priyankasrs/secureChain/issues"
   },
-  "homepage": "https://github.com/priyankasrs/secureChain#readme"
+  "homepage": "https://github.com/priyankasrs/secureChain#readme",
+  "keywords": [
+    "smart",
+    "contracts",
+    "react"
+  ]
 }
