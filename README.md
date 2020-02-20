@@ -1,4 +1,4 @@
-# Security Chain Blockchain DApp 
+# Security Chain Blockchain Distributed Application 
 
 Traveling around the world has been made easy nowadays. But do you know, there’s on average 1,088,300 (1 million) passengers and pedestrians coming across the US border everyday? That’s a huge amount of work to perform background for everybody in real time. Plus, since every security party has its own data center, it would be hard for a particular border in one particular country to identify a person with all their previous crime record in other countries. 
 
